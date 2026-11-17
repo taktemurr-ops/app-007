@@ -17,6 +17,8 @@ jobs:
           channel: stable
           flutter-version: '3.38.0'
       - run: flutter create --platforms=android,ios --project-name tarif_360 .
+      - name: Remove generated sample widget test
+        run: rm -f test/widget_test.dart
       - run: flutter pub get
       - run: dart format lib test
       - run: flutter analyze
