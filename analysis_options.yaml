@@ -1,0 +1,10 @@
+include: package:flutter_lints/flutter.yaml
+analyzer:
+  errors:
+    invalid_assignment: error
+    undefined_method: error
+    undefined_getter: error
+    undefined_identifier: error
+    curly_braces_in_flow_control_structures: ignore
+    deprecated_member_use: ignore
+    unused_import: ignore
