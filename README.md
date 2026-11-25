@@ -1,16 +1,14 @@
-# APP-007 — Tarif 360 (development snapshot, not a completed release)
+# Tarif Kutusu · Recipe Box
 
-Offline-first Flutter recipe manager with recipe creation, ingredient quantities and scaling, multi-step preparation notes, favorites, seven-day meal planner, aggregated weekly shopping lists, clipboard sharing, secure local persistence, JSON backup/restore and user-confirmed deletion. Turkish, English and Arabic UI labels are included for the main navigation and essential workflows; language and accessibility audits remain outstanding.
+Tarifler, porsiyon ve alışveriş listesi · Recipes, servings and shopping list
 
-## Build and tests
+Eğitim ve Yaşam ailesinin uygulaması. Çevrimdışı çalışır; telefon, tablet ve web.
+Gerçek uygulama ortak motordadır: [egitim-motoru](https://github.com/taktemurr-ops/egitim-motoru); çatı ve
+reklam/satın alma/gizlilik: [studio-core](https://github.com/taktemurr-ops/studio-core) (`lib/apps`).
+Merkez uygulama: [merkez-egitim-ve-yasam](https://github.com/taktemurr-ops/merkez-egitim-ve-yasam).
 
-```sh
-flutter create --platforms=android,ios --project-name tarif_360 .
-flutter pub get
-dart format lib test
-flutter analyze
-flutter test
-flutter build apk --debug
-```
+Veriler yalnızca cihazda saklanır; hesap gerekmez.
 
-The project is not publication-ready: native Android/iOS tests and signing, original 20-module product scope acceptance, store assets and any approved production integrations remain unverified. Recipe instructions and amounts are user-provided, not externally verified. Keep copied JSON exports private because clipboard text is unencrypted.
+> Bu depo önceden bağımsız bir uygulamaydı (`app-007`). Eğitim ve Yaşam çatısına taşındı; eski
+> sürümün kodu git geçmişinde duruyor. Özellikleri motora aktarıldı (tarif ekleme/düzenleme, malzeme miktarı ve porsiyona göre ölçekleme, adımlar, etiket, favori, birleşik alışveriş listesi, JSON yedek/geri yükleme — eski app-007 yedekleri içe aktarılabilir).
+> GitHub'da depo adı `uyg-tarif-kutusu` olarak değiştirilebilir (eski adresler yönlendirilir).
